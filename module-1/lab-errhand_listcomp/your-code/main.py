@@ -20,15 +20,16 @@ print(square)
 #2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-power_of_two = 
-
+power_of_two = [2**n for n in range(50)]
+print(power_of_two)
 
 #3. Calculate the square root of the first 100 numbers. Use sqrt as the name of the list.
 # You will probably need to install math library with pip and import it in this file.  
 # Remember to use list comprehensions and to print your results
 
-
-
+import math
+sqrt = [math.sqrt(n) for n in range(100)]
+print(square)
 
 #4. Create this list [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]. Use my_list as the name of the list.
 # Remember to use list comprehensions and to print your results
@@ -106,7 +107,7 @@ list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', 
 
 
 for i in ['a','b','c']:
-    print i**2
+    #print i**2
 
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
