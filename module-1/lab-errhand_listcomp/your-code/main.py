@@ -55,15 +55,17 @@ print(divisible_by_seven)
 
 teststring = 'Find all of the words in a string that are monosyllabic'
 
-
-
+non_vowels = [c for c in teststring if c != ('a', 'e', 'i', 'o', 'u')]
+print(non_vowels)
 
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
 
+sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog'.
 
-
+capital_letters = [c for c in sentence if c.isupper()]
+print(capital_letters)
 
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
 # Use consonants as the name of the list.
