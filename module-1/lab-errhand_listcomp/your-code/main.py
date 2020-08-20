@@ -54,8 +54,9 @@ print(divisible_by_seven)
 # You can use the following test string but feel free to modify at your convenience
 
 teststring = 'Find all of the words in a string that are monosyllabic'
+c = "BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"
 
-non_vowels = [c for c in teststring if c != ('a', 'e', 'i', 'o', 'u')]
+non_vowels = [l for l in teststring if l in c]
 print(non_vowels)
 
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
@@ -71,15 +72,19 @@ print(capital_letters)
 # Use consonants as the name of the list.
 # Remember to use list comprehensions and to print your results.
 
+sentence = 'The quick brown fox jumped over the lazy dog'
 
+c = "BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"
 
+consonants = [l for l in sentence if l in c]
+print(consonants)
 
 
 #10. Find the folders you have in your madrid-oct-2018 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
 
-
+files = []
 
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
