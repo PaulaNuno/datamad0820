@@ -29,25 +29,25 @@ print(power_of_two)
 
 import math
 sqrt = [math.sqrt(n) for n in range(100)]
-print(square)
+print(sqrt)
 
 #4. Create this list [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]. Use my_list as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
-
+my_list = [-n for n in range (11)]
+print(my_list)
 
 #5. Find the odd numbers from 1-100. Use odds as the name of the list. 
 # Remember to use list comprehensions and to print your results
 
-
-
+odds = [n for n in range(1, 100, 2)]
+print(odss)
 
 #6. Find all of the numbers from 1-1000 that are divisible by 7. Use divisible_by_seven as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
-
+divisible_by_seven = [n for n in range(1, 100) if n % 7 == 0]
+print(divisible_by_seven)
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
 # Remember to use list comprehensions and to print your results
@@ -107,7 +107,7 @@ list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', 
 
 
 for i in ['a','b','c']:
-    #print i**2
+    print i**2
 
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
