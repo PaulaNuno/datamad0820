@@ -8,19 +8,19 @@ print(my_listComprehension)
 
 #Insert here the module/library import statements 
 
-importlib.import_statements()
-
+import statements
 
 #1. Calculate the square number of the first 20 numbers. Use square as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+square = [n**2 for n in range(20)]
+print(square)
 
 
 #2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+power_of_two = 
 
 
 #3. Calculate the square root of the first 100 numbers. Use sqrt as the name of the list.
