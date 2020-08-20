@@ -115,14 +115,15 @@ list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', 
 ['100', '100', '100', '100']]
 
 floats = [float(n) for sl in list_of_lists for n in sl]
-print(floats)
+print(floats))
 
 #14. Handle the exception thrown by the code below by using try and except blocks. 
 
-
 for i in ['a','b','c']:
-    print i**2
-
+    try:
+        print i**2
+    except SyntaxError:
+        print(You need brackets for printing)
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
 #Then use a finally block to print 'All Done.'
