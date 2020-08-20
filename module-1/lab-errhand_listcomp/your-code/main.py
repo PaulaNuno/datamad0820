@@ -63,7 +63,7 @@ print(non_vowels)
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
 
-sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog'.
+sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog'
 
 capital_letters = [c for c in sentence if c.isupper()]
 print(capital_letters)
@@ -84,7 +84,11 @@ print(consonants)
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
 
-files = []
+import os
+
+files = [f for f in os.listdir(ironhack/datamad0820) if os.path.isfile(os.path.join(ironhack/datamad0820, file)]
+print(files)
+
 
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
@@ -106,8 +110,6 @@ list_of_lists = [[1,2,3],[4,5,6],[7,8,9]]
 list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', '20'], \
 ['30', '20', '30', '50', '10', '30', '20', '20', '20'], ['100', '100'], ['100', '100', '100', '100', '100'], \
 ['100', '100', '100', '100']]
-
-
 
 
 #14. Handle the exception thrown by the code below by using try and except blocks. 
