@@ -23,9 +23,8 @@ class Soldier:
 class Viking(Soldier):
 
     def __init__(self, health, strength, name):
-        self.name = name
         super().__init__(health, strength)
-        
+        self.name = name        
       
     # attack method (inherited from Soldier)
     
@@ -36,9 +35,9 @@ class Viking(Soldier):
     # receiveDamage method 
     
     def receiveDamage(self, damage):
-        self.damage = damage
-        injury = health - damage 
-        if damage > health:
+        self.health = - damage 
+        energy = self.health
+        if energy > 0:
             return(f"{self.name} has received {self.damage} points of damage")
         else:
             return(f"{self.name} has died in act of combat")
@@ -50,8 +49,29 @@ class Viking(Soldier):
 
 # Saxon
 
-python
-class Saxon:
+class Saxon(Soldier):
+
+    def __init__(self, health, strength):
+        self.health = health
+        self.strength = strength
+
+    # Attack method  
+
+    def attack(self):
+        return 
+        self.strength
+
+    # receiveDamage method 
+
+    def receiveDamage(self, damage):
+        self.health = - damage 
+        energy = self.health
+        for energy in receiveDamage:
+            if energy > 0
+                return(f"A Saxon has received {self.damage} points of damage")
+                else:
+                    return(f"A Saxon has died in act of combat")
+
     pass
 
 # War
