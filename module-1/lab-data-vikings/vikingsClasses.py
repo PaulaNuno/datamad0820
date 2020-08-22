@@ -66,13 +66,12 @@ class Saxon(Soldier):
     def receiveDamage(self, damage):
         self.health = - damage 
         energy = self.health
-        for energy in receiveDamage:
-            if energy > 0
-                return(f"A Saxon has received {self.damage} points of damage")
-                else:
-                    return(f"A Saxon has died in act of combat")
+            if energy > 0:
+            return(f"A Saxon has received {self.damage} points of damage")
+            else:
+            return(f"A Saxon has died in act of combat")
 
-    pass
+    passpython
 
 # War
 
