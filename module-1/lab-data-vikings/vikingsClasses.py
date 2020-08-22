@@ -5,13 +5,13 @@ class Soldier:
     
     def __init__(self, health, strength):
     # Soldier constructor
-    self.health = health
-    self.strength = strength
+        self.health = health
+        self.strength = strength
 
     # Attack method  
     def attack(self):
         return 
-            self.strength
+        self.strength
 
     # receiveDamage method 
     def receiveDamage(self,damage):
@@ -21,35 +21,36 @@ class Soldier:
 # Viking
 
 class Viking(Soldier):
-    
-    def__init__(self, name, health, strength):        
-        super().__init__(self, health, strength)
+
+    def __init__(self, health, strength, name):
         self.name = name
-               
+        super().__init__(health, strength)
+        
+      
     # attack method (inherited from Soldier)
     
     def attack(self): 
         return 
-            self.strength
+        super().strength()
 
     # receiveDamage method 
     
     def receiveDamage(self, damage):
-        self.health -= damage
-        health_a_damage = self.health
-        if health_a_damage > 0:
-            return("NAME has received DAMAGE points of damage")
+        self.damage = damage
+        injury = health - damage 
+        if damage > health:
+            return(f"{self.name} has received {self.damage} points of damage")
         else:
-            return("NAME has died in act of combat")
+            return(f"{self.name} has died in act of combat")
 
     # battleCry method 
-        def battleCry(self):
-            return("Odin Owns You All!")
+    def battleCry(self):
+        return("Odin Owns You All!")
 
 
 # Saxon
 
-
+python
 class Saxon:
     pass
 
