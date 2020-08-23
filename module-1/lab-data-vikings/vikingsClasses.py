@@ -26,18 +26,17 @@ class Viking(Soldier):
         super().__init__(health, strength)
         self.name = name        
       
-    # attack method (inherited from Soldier)
+    # Attack method (inherited from Soldier)
     
     def attack(self): 
-        return 
-        super().strength()
+        return self.strength()
 
     # receiveDamage method 
     
     def receiveDamage(self, damage):
         self.health = - damage 
         energy = self.health
-        if energy > 0:
+        if (energy > 0):
             return(f"{self.name} has received {self.damage} points of damage")
         else:
             return(f"{self.name} has died in act of combat")
@@ -66,15 +65,32 @@ class Saxon(Soldier):
     def receiveDamage(self, damage):
         self.health = - damage 
         energy = self.health
-            if energy > 0:
+        if (energy > 0):
             return(f"A Saxon has received {self.damage} points of damage")
-            else:
+        else:
             return(f"A Saxon has died in act of combat")
 
-    passpython
+    
 
 # War
 
 
 class War:
     pass
+    def __init__(self):
+        self.vikingArmy = []
+        self.saxonArmy = []
+
+    def addViking(self, Viking):
+        self.vikingArmy += 1
+
+    def addSaxon(self, Saxon):
+        self.saxonArmy += 1
+
+    def vikingAttack():
+        random.choice(Saxon) = 
+
+    def saxonAttack():
+
+
+    def showStatus():
