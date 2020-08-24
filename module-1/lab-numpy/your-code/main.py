@@ -33,7 +33,7 @@ print("b size", b.size)
 
 #8. Are you able to add a and b? Why or why not?
 
-
+###It's not possible to add them because they have different size
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
@@ -41,7 +41,7 @@ c = (np.transpose(b).reshape((2, 3, 5))
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
 
-
+d = np.add(b, a)
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
 
