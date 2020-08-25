@@ -1,41 +1,3 @@
-
-CREATE TABLE `new_cars_company`.`cars` (
-  `idcars` INT NOT NULL,
-  `VIN` VARCHAR(45) NOT NULL,
-  `manufacturer` VARCHAR(45) NOT NULL,
-  `model` VARCHAR(45) NOT NULL,
-  `year` YEAR NOT NULL,
-  `color` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idcars`));
-
-
-CREATE TABLE `new_cars_company`.`customers` (
-  `customers` INT NOT NULL,
-  `customer_id` VARCHAR(45) NOT NULL,
-  `phone_number` INT NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `address` VARCHAR(45) NOT NULL,
-  `city` VARCHAR(45) NOT NULL,
-  `state/province` VARCHAR(45) NOT NULL,
-  `zip` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`customers`));
-
-CREATE TABLE `new_cars_company`.`salespersons` (
-  `staff_ID` INT NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
-  `store_at_your_company` VARCHAR(45) CHARACTER SET 'ascii' NOT NULL,
-  PRIMARY KEY (`staff_ID`));
-
-CREATE TABLE `new_cars_company`.`Invoices` (
-  `invoices` INT NOT NULL,
-  `invoice_number` VARCHAR(45) NOT NULL,
-  `date` DATE NOT NULL,
-  `car` VARCHAR(45) NOT NULL,
-  `customer` VARCHAR(45) NOT NULL,
-  `salesperson_to_each_sale` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`invoices`));
-
-
 INSERT INTO `new_cars_company`.`cars` (`idcars`, `VIN`, `manufacturer`, `model`, `year`, `color`) VALUES ('1', '3K000I65581AKSNUP', 'Fiat', 'Rifter', '2019', 'red');
 INSERT INTO `new_cars_company`.`cars` (`idcars`, `VIN`, `manufacturer`, `model`, `year`, `color`) VALUES ('2', '6B076I98581DHSNUP', 'Peugeot', 'Fusion', '2018', 'green');
 INSERT INTO `new_cars_company`.`cars` (`idcars`, `VIN`, `manufacturer`, `model`, `year`, `color`) VALUES ('4', '0L096I98581JHSNUP', 'Citroen', 'RAV4', '2019', 'grey');
@@ -64,3 +26,4 @@ CHANGE COLUMN `store_at_your_company` `store_at_your_company` VARCHAR(45) CHARAC
 INSERT INTO `new_cars_company`.`salespersons` (`idsalespersons`, `name`, `store_at_your_company`) VALUES ('1', 'Pepe García', 'Madrid');
 INSERT INTO `new_cars_company`.`salespersons` (`idsalespersons`, `name`, `store_at_your_company`) VALUES ('2', 'María Löpez', 'Barcelona');
 INSERT INTO `new_cars_company`.`salespersons` (`idsalespersons`, `name`, `store_at_your_company`) VALUES ('3', 'Susana Sánchez', 'Valencia');
+
