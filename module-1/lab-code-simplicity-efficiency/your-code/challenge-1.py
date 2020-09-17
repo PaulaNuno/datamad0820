@@ -1,3 +1,28 @@
+print('Welcome to this calculator! \n' 
+'It can add and subtract whole numbers from zero to five \n'
+'Please, choose your operation \n') 
+
+number_1 = input('Please choose your first number (zero to five): ')
+operation = input('What do you want to do? plus or minus: ')
+number_2 = input ('Please choose your second number (zero to five): ')
+
+numbers = {
+"zero": 0, 
+"one": 1,
+"two": 2,
+"three": 3, 
+"four": 4,
+"five": 5
+}
+
+def calculator_in_words (num_1, num_2):
+      if selector == plus:
+            suma
+
+      
+
+
+
 """
 This is a dumb calculator that can add and subtract whole numbers from zero to five.
 When you run the code, you are prompted to enter two numbers (in the form of English
